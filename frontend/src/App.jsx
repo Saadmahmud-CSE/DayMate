@@ -73,7 +73,7 @@ export default function App() {
             </div>
           )}
 
-          {!loading && (
+          {error && !loading && (
             <div className="text-center py-20">
               <p className="text-red-400 text-xl bg-red-900/20 rounded-3xl p-8 max-w-2xl mx-auto">
                 {error}
