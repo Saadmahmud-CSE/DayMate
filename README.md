@@ -3,7 +3,7 @@
 ## Live URLs
 - Frontend (Vercel): https://day-mate-two.vercel.app
 - Backend (Render):  https://daymate-1.onrender.com
-- Test API: https://daymate-backend.onrender.com/api/plan?location=Dhaka
+- Test API: https://daymate-1.onrender.com/api/plan?location=Dhaka
 
 ## Features
 - Real-time weather (OpenWeatherMap)
