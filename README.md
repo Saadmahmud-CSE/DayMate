@@ -26,8 +26,8 @@
 - `.env.example` files included in both folders
 
 ## Screenshots & Demo Video:
-Attached in /screenshots folder
-Demo Video (1 minute): https://drive.google.com/file/d/16ogO416_k2r6xjpbH_drbnt9A2dgm6zn/view?usp=drive_link
+  - Attached in /screenshots folder
+  - Demo Video (1 minute): https://drive.google.com/file/d/16ogO416_k2r6xjpbH_drbnt9A2dgm6zn/view?usp=drive_link
 
 ## Local Development
 ```bash
