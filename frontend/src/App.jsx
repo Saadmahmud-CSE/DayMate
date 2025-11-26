@@ -12,7 +12,7 @@ export default function App() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
 
-  const BACKEND_URL = import.meta.env.BACKEND_URL || "https://daymate-1.onrender.com";
+  const BACKEND_URL = import.meta.env.BACKEND_URL;
 
   const fetchPlan = async (location) => {
     setLoading(true);
