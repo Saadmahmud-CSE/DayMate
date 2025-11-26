@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  
+  body {
+    @apply min-h-screen transition-all duration-700;
+    background: #f1f2f2;        
+    color: #111922;       
+  }
+  
+  .dark body {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+    color: #f1f5f9;                 
+  }
+}
+
+@layer components {
+  .card {
+    @apply rounded-2xl shadow-xl backdrop-blur-lg border p-6 sm:p-8 
+           transition-all duration-500 hover:shadow-2xl;
+
+    background: rgba(27, 98, 101, 0.95);
+    border-color: #113461;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    
+    .dark & {
+      background: rgba(30, 41, 59, 0.92);
+      border-color: #2dd4bf;
+      box-shadow: 0 8px 32px rgba(16, 8, 8, 0.4);
+    }
+  }
+
+  .title {
+    @apply text-3xl sm:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-transparent;
+  }
+
+  .subtitle {
+    @apply text-lg sm:text-xl text-gray-600 dark:text-gray-300 mt-2;
+  }
+
+  .text-primary {
+    @apply font-semibold text-gray-900 dark:text-teal-300;
+  }
+
+  .text-secondary {
+    @apply text-gray-700 dark:text-gray-400;
+  }
+}
+
+@layer utilities {
+  .grid-responsive {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-10;
+  }
+  
+  .container-responsive {
+    @apply w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
