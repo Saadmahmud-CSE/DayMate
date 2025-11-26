@@ -1,8 +1,8 @@
 # DayMate - AI Daily Planning Assistant
 
 ## Live URLs
-- Frontend (Vercel): https://your-project-name.vercel.app
-- Backend (Render):  https://daymate-backend.onrender.com
+- Frontend (Vercel): https://day-mate-two.vercel.app
+- Backend (Render):  https://daymate-1.onrender.com
 - Test API: https://daymate-backend.onrender.com/api/plan?location=Dhaka
 
 ## Features
