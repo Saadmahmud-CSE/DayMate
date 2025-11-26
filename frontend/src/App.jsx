@@ -12,7 +12,7 @@ export default function App() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
 
-  const BACKEND_URL = import.meta.env.BACKEND_URL || "http://127.0.0.1:8000";
+  const BACKEND_URL = import.meta.env.BACKEND_URL || "https://daymate-1.onrender.com";
 
   const fetchPlan = async (location) => {
     setLoading(true);
@@ -73,7 +73,7 @@ export default function App() {
             </div>
           )}
 
-          {error && !loading && (
+          {!loading && (
             <div className="text-center py-20">
               <p className="text-red-400 text-xl bg-red-900/20 rounded-3xl p-8 max-w-2xl mx-auto">
                 {error}
