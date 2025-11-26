@@ -12,7 +12,7 @@ export default function App() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
 
-  const BACKEND_URL = import.meta.env.BACKEND_URL;
+  const BACKEND_URL = import.meta.env.BACKEND_URL || "http://127.0.0.1:8000";
 
   const fetchPlan = async (location) => {
     setLoading(true);
