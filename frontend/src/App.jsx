@@ -12,7 +12,7 @@ export default function App() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
 
-  const BACKEND_URL = import.meta.env.BACKEND_URL || "http://127.0.0.1:8000";
+  const BACKEND_URL = import.meta.env.BACKEND_URL || "https://daymate-1.onrender.com";
 
   const fetchPlan = async (location) => {
     setLoading(true);
@@ -79,7 +79,7 @@ export default function App() {
                 {error}
               </p>
               <p className="text-gray-500 mt-4">
-                Make sure your backend is running: <code className="bg-gray-800 px-3 py-1 rounded">uvicorn main:app --reload</code>
+                Make sure your backend is running: <code className="bg-gray-800 px-3 py-1 rounded">uvicorn app.main:app --reload</code>
               </p>
             </div>
           )}
